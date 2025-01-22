@@ -1,8 +1,9 @@
+"use strict";
 // **********************************************
 // ******************* PART 1 *******************
 // **********************************************
 // Create a variable called highScore that can be a number OR a boolean
-var highScore;
+let highScore;
 highScore = 50;
 highScore = false;
 // **********************************************
@@ -11,11 +12,11 @@ highScore = false;
 // create an array called stuff
 // it can be an array of numbers OR an array of strings
 // it cannot be an array of numbers and strings (mixed together)
-var stuff;
+let stuff;
 stuff = ["test", "item"];
 stuff = [12, 15];
 // Create an array called colors that can hold a mixture of RGB and HSL color types
-var colors = [];
+let colors = [];
 // **********************************************
 // ******************* PART 6 *******************
 // **********************************************
@@ -23,12 +24,12 @@ var colors = [];
 // It should print "Hello, <name>" for that single person OR greet each person in the array with the same format
 function greet(person) {
     if (Array.isArray(person)) {
-        for (var i in person) {
-            console.log("Hello, ".concat(person[i]));
+        for (let i in person) {
+            console.log(`Hello, ${person[i]}`);
         }
     }
     else
-        console.log("Hello, ".concat(person));
+        console.log(`Hello, ${person}`);
 }
 greet("sam");
 greet(["sam", "melanie", "justin"]);

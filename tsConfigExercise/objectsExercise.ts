@@ -13,7 +13,7 @@ type Movie = {
   boxOffice: BoxOfficeStats
 }
 
-const dune: Movie = {
+const Dune: Movie = {
   title: "Dune",
   originalTitle: "Dune Part One",
   director: "Denis Villeneuve",
@@ -25,7 +25,7 @@ const dune: Movie = {
   },
 };
 
-const cats: Movie = {
+const Cats: Movie = {
   title: "Cats",
   director: "Tom Hooper",
   releaseYear: 2019,
@@ -46,5 +46,5 @@ function getProfit(movie: Movie): number {
   return movie.boxOffice.grossWorldwide - movie.boxOffice.budget
 }
 
-console.log(getProfit(cats))
-console.log(getProfit(dune))
+console.log(getProfit(Cats))
+console.log(getProfit(Dune))
