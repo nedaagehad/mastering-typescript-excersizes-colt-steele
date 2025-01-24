@@ -80,8 +80,8 @@ let colors: (HSL | RGB)[] = [];
 
 function greet(person: string | string[]): void {
   if (Array.isArray(person)) {
-    for (let i in person) {
-      console.log(`Hello, ${person[i]}`);
+    for (let i of person) {
+      console.log(`Hello, ${i}`);
     }
   }
 
