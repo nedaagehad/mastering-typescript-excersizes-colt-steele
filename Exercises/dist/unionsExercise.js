@@ -24,8 +24,8 @@ let colors = [];
 // It should print "Hello, <name>" for that single person OR greet each person in the array with the same format
 function greet(person) {
     if (Array.isArray(person)) {
-        for (let i in person) {
-            console.log(`Hello, ${person[i]}`);
+        for (let i of person) {
+            console.log(`Hello, ${i}`);
         }
     }
     else
