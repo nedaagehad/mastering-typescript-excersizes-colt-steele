@@ -1,0 +1,3 @@
+[submodule "webpack-with-typescript"]
+	path = webpack-with-typescript
+	url = https://github.com/nedaagehad/webpack-with-typescript.git
